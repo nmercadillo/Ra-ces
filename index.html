@@ -2,71 +2,45 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explotación de Datos Raíces</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-        .card {
-            background: white;
-            border-radius: 16px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s ease;
-            text-decoration: none;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-        }
-        .card-icon {
-            font-size: 4em;
-            margin-bottom: 20px;
-        }
-        .card h2 {
-            margin-bottom: 15px;
-            color: #475569;
-        }
-        .card p {
-            color: #64748b;
-            line-height: 1.6;
-        }
-    </style>
+    <title>Ra-ces – Panel principal</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+    <h1>Panel principal</h1>
+
     <div class="container">
-        <h1>📊 Explotación de Datos Raíces</h1>
-        <p class="subtitle">Selecciona una herramienta para analizar tus archivos CSV</p>
 
-        <div class="card-grid">
-            <a href="asistencia.html" class="card">
-                <div class="card-icon">📅</div>
-                <h2>Análisis de Asistencia</h2>
-                <p>Procesa faltas y retrasos por evaluaciones. Genera informes de absentismo por grupos y niveles educativos.</p>
-            </a>
+        <!-- ASISTENCIA -->
+        <a href="asistencia.html" class="card">
+            <div class="icon">📝</div>
+            <h3>Asistencia</h3>
+            <p>Consulta y analiza la asistencia del alumnado.</p>
+        </a>
 
-            <a href="notas_grupo.html" class="card">
-                <div class="card-icon">👥</div>
-                <h2>Notas por Grupo</h2>
-                <p>Analiza el número de suspensos por alumno. Agrupa unidades (A, B, C...) y detecta alumnos con todo aprobado.</p>
-            </a>
+        <!-- RESULTADOS POR GRUPO -->
+        <a href="resultados_grupo.html" class="card">
+            <div class="icon">👥</div>
+            <h3>Resultados por grupo</h3>
+            <p>Estadísticas y gráficos de rendimiento por grupo.</p>
+        </a>
 
-            <a href="notas_materia.html" class="card">
-                <div class="card-icon">📚</div>
-                <h2>Notas por Materia</h2>
-                <p>Calcula porcentajes de aprobados por asignatura. Incluye desglose por evaluaciones y agrupaciones departamentales.</p>
-            </a>
-        </div>
+        <!-- RESULTADOS POR MATERIA -->
+        <a href="resultados_materia.html" class="card">
+            <div class="icon">📚</div>
+            <h3>Resultados por materia</h3>
+            <p>Análisis detallado por asignaturas.</p>
+        </a>
+
+        <!-- NUEVO: RESULTADOS COMPARATIVOS POR NIVELES -->
+        <a href="resultados_niveles.html" class="card">
+            <div class="icon">📊</div>
+            <h3>Resultados comparativos por niveles</h3>
+            <p>Comparativa entre niveles (1º ESO, 2º ESO, etc.) con gráficos y evolución temporal.</p>
+        </a>
+
     </div>
+
 </body>
 </html>
