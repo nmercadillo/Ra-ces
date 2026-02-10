@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultados por niveles</title>
+
+    <!-- Librerías necesarias -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/xlsx.full.min.js"></script>
+
+    <!-- Archivos del proyecto -->
+    <script src="js/common.js"></script>
+    <script src="js/resultados_niveles.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Resultados comparativos por niveles</h1>
+
+    <input type="file" id="input" multiple>
+
+    <div style="margin-top:20px;">
+        <label for="modo">Modo:</label>
+        <select id="modo">
+            <option value="nivel">Resultados por nivel</option>
+            <option value="evolucion_nivel">Evolución temporal por nivel</option>
+            <option value="comparativa_nivel">Comparativa entre cursos</option>
+        </select>
+    </div>
+
+    <h2>Tabla</h2>
+    <div id="tabla"></div>
+
+    <h2>Gráfico</h2>
+    <canvas id="grafico"></canvas>
+
+</body>
+</html>
